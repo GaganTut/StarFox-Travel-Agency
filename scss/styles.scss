@@ -1,7 +1,2 @@
-body {
-  background-color: red;
-
-  h1 {
-    color: purple;
-  }
-}
+@import "partials/global-vars";
+@import "partials/header";

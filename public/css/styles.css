@@ -1,4 +1,28 @@
 body {
-  background-color: red; }
-  body h1 {
-    color: purple; }
+  background-color: #99CCCC;
+  width: 100%; }
+
+.whole-header {
+  background-color: #333333;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+  width: 100%; }
+  .whole-header .company-intro {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .whole-header .company-intro .company-logo {
+      filter: invert(100%);
+      width: 60px; }
+    .whole-header .company-intro .company-name {
+      color: #99CCCC;
+      font-family: "Open Sans";
+      font-size: 30px; }
+    .whole-header .company-intro .extended-name {
+      display: none; }
+  .whole-header .navigation-bar .nav-list {
+    display: none; }
