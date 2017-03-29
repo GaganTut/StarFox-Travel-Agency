@@ -1,0 +1,56 @@
+.main-body {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  height: 1000px;
+
+  .general-info {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 80%;
+
+    img {
+      height: 300px;
+      filter: invert(20%)
+    }
+
+    .company-mission {
+      color: $darkgray;
+      font-family: $basefont;
+      text-align: center;
+      font-size: 30px;
+      font-weight: 200;
+
+      .bold-words {
+        font-weight: 400;
+      }
+    }
+
+    .find-out-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $gray;
+      width: 100%;
+      height: 50px;
+      box-shadow: 0px 5px $darkgray;
+
+      .button-text {
+        color: $white;
+        font-size: 20px;
+        font-weight: 200;
+        font-family: $basefont;
+        text-align: center;
+      }
+    }
+  }
+
+  .pricing {
+    background-color: $white;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 100%;
+  }
+}

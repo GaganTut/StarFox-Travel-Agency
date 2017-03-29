@@ -1,2 +1,12 @@
+@import "partials/reset";
 @import "partials/global-vars";
-@import "partials/header";
+
+/* @media (max-width: 600px) { */
+  body {
+    background-color: $lightblue;
+    display: flex;
+    flex-flow: column nowrap;
+    @import "partials/header-small";
+    @import "partials/body-small";
+  }
+/* } */

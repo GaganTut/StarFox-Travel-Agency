@@ -1,28 +1,126 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* @media (max-width: 600px) { */
 body {
   background-color: #99CCCC;
-  width: 100%; }
-
-.whole-header {
-  background-color: #333333;
-  box-sizing: border-box;
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-  align-items: center;
-  height: 70px;
-  width: 100%; }
-  .whole-header .company-intro {
+  flex-flow: column nowrap; }
+  body .whole-header {
+    background-color: #333333;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center; }
-    .whole-header .company-intro .company-logo {
-      filter: invert(100%);
-      width: 60px; }
-    .whole-header .company-intro .company-name {
-      color: #99CCCC;
-      font-family: "Open Sans";
-      font-size: 30px; }
-    .whole-header .company-intro .extended-name {
-      display: none; }
-  .whole-header .navigation-bar .nav-list {
-    display: none; }
+    height: 70px; }
+    body .whole-header .company-intro {
+      flex: 1;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-around;
+      align-items: center; }
+      body .whole-header .company-intro .logo-pic .company-logo {
+        filter: invert(100%);
+        width: 60px; }
+      body .whole-header .company-intro .full-name .company-name {
+        color: #99CCCC;
+        flex: 1;
+        font-family: "Open Sans";
+        font-size: 20px;
+        font-weight: 300; }
+        body .whole-header .company-intro .full-name .company-name .bold-name {
+          font-weight: 400; }
+      body .whole-header .company-intro .full-name .extended-name {
+        display: none; }
+    body .whole-header .navigation-bar {
+      flex: 2;
+      display: flex;
+      justify-content: flex-end; }
+      body .whole-header .navigation-bar .nav-list {
+        display: none; }
+  body .main-body {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    height: 1000px; }
+    body .main-body .general-info {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      width: 80%; }
+      body .main-body .general-info img {
+        height: 300px;
+        filter: invert(20%); }
+      body .main-body .general-info .company-mission {
+        color: #333333;
+        font-family: "Open Sans";
+        text-align: center;
+        font-size: 30px;
+        font-weight: 200; }
+        body .main-body .general-info .company-mission .bold-words {
+          font-weight: 400; }
+      body .main-body .general-info .find-out-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #666666;
+        width: 100%;
+        height: 50px;
+        box-shadow: 0px 5px #333333; }
+        body .main-body .general-info .find-out-button .button-text {
+          color: #FFFFFF;
+          font-size: 20px;
+          font-weight: 200;
+          font-family: "Open Sans";
+          text-align: center; }
+    body .main-body .pricing {
+      background-color: #FFFFFF;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      width: 100%; }
+
+/* } */
