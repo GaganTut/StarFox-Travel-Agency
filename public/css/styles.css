@@ -49,13 +49,16 @@ table {
 body {
   background-color: #99CCCC;
   display: flex;
-  flex-flow: column nowrap; }
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center; }
   body .whole-header {
     background-color: #333333;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 70px; }
+    height: 100px;
+    width: 100%; }
     body .whole-header .company-intro {
       flex: 1;
       display: flex;
@@ -84,32 +87,37 @@ body {
   body .main-body {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
-    height: 1000px; }
+    justify-content: space-around;
+    height: 2000px;
+    width: 100%; }
     body .main-body .general-info {
       display: flex;
-      flex-flow: column nowrap;
+      flex-flow: column wrap;
+      justify-content: center;
       align-items: center;
       width: 80%; }
       body .main-body .general-info img {
+        flex: 3;
         height: 300px;
         filter: invert(20%); }
       body .main-body .general-info .company-mission {
+        flex: 4;
         color: #333333;
         font-family: "Open Sans";
         text-align: center;
-        font-size: 30px;
+        font-size: 55px;
         font-weight: 200; }
         body .main-body .general-info .company-mission .bold-words {
           font-weight: 400; }
       body .main-body .general-info .find-out-button {
+        flex: 1;
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: #666666;
         width: 100%;
-        height: 50px;
-        box-shadow: 0px 5px #333333; }
+        height: 70px;
+        box-shadow: 0px 10px #333333; }
         body .main-body .general-info .find-out-button .button-text {
           color: #FFFFFF;
           font-size: 20px;
@@ -122,5 +130,31 @@ body {
       flex-flow: column nowrap;
       align-items: center;
       width: 100%; }
+      body .main-body .pricing .moon-pricing-option {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: #666666;
+        flex: 3;
+        width: 80%; }
+        body .main-body .pricing .moon-pricing-option .pricing-title {
+          color: #FFFFFF;
+          font-family: "Open Sans";
+          font-weight: 700;
+          width: 100%; }
+      body .main-body .pricing .earth-pricing-option {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: #666666;
+        flex: 3;
+        width: 80%; }
+        body .main-body .pricing .earth-pricing-option .pricing-title {
+          color: #FFFFFF;
+          font-family: "Open Sans";
+          font-weight: 700;
+          width: 100%; }
 
 /* } */

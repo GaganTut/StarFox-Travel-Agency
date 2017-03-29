@@ -5,7 +5,9 @@
   body {
     background-color: $lightblue;
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
     @import "partials/header-small";
     @import "partials/body-small";
   }
