@@ -1,4 +1,75 @@
 .pricing {
+  align-items: center;
   background-color: white;
+  color: $white;
+  display: flex;
+  flex-flow: column nowrap;
+  font-family: $basefont;
   width: $full-width;
+
+  .moon-pricing {
+    align-items: center;
+    background-color: $gray;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    height: 500px;
+    margin-top: 10%;
+    width: 80%;
+
+    .pricing-title {
+      border-bottom: 1px solid $darkgray;
+      font-size: 40px;
+      font-weight: 600;
+      margin: 5%;
+      padding-bottom: 5%;
+      text-align: center;
+      width: 100%;
+    }
+
+    .price-amount {
+      border-bottom: 10px solid $white;
+      font-size: 100px;
+      font-weight: 300;
+      margin: 5%;
+      padding-bottom: 2.5%;
+    }
+
+    .price-info {
+      font-size: 20px;
+      font-weight: 300;
+      letter-spacing: 1.5px;
+      line-height: 40px;
+      text-align: center;
+      width: 50%;
+    }
+  }
+
+  .earth-pricing {
+    @extend .moon-pricing;
+  }
+
+  .other-pricing-options {
+    display: none;
+  }
+
+  .more-pricing {
+    align-items: center;
+    background-color: $lightblue;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-top: 10%;
+    padding: 2.5% 0;
+    width: $full-width;
+
+    .deals-text {
+      font-size: 50px;
+      padding-right: 2.5%;
+    }
+
+    img {
+      width: 10%;
+    }
+  }
 }
