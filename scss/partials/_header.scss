@@ -9,7 +9,7 @@
     background-image: url("../assets/header_bg.svg");
     background-color: $lightblue;
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row wrap;
     align-items: center;
     height: 240px;
     margin-top: 0;
@@ -39,6 +39,8 @@
         width: 70%;
 
         @media #{$medium}{
+          margin: auto;
+          padding: 2% 0;
           width: 15%;
         }
       }
@@ -46,7 +48,7 @@
 
     .full-name {
       font-family: $basefont;
-      font-size: 25px;
+      font-size: 27px;
       font-weight: 300;
       letter-spacing: 0.5px;
       text-align: center;
@@ -88,7 +90,9 @@
     width: 60%;
 
     @media #{$medium}{
+      border-radius: 10px;
       justify-content: center;
+      width: 100%;
     }
 
     img {
@@ -111,6 +115,14 @@
       width: 100%;
 
       @media #{$medium}{
+        border-radius: 10px;
+        display: flex;
+        flex-flow: row nowrap;
+        left: 35px;
+        position: absolute;
+        text-align: center;
+        top: 200px;
+        width: 100%;
       }
 
       .nav-items {
@@ -122,6 +134,7 @@
         padding: 2.5% 7.5%;
 
         @media #{$medium}{
+          font-size: 15px;
         }
       }
     }
