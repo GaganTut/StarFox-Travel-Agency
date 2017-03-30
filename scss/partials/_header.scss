@@ -5,37 +5,81 @@
   margin-top: 1%;
   width: $full-width;
 
+  @media #{$medium}{
+    background-image: url("../assets/header_bg.svg");
+    background-color: $lightblue;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    height: 240px;
+    margin-top: 0;
+  }
+
   .company-intro {
     align-items: center;
     display: flex;
     justify-content: center;
     width: 40%;
 
+    @media #{$medium}{
+      flex-flow: row wrap;
+      width: 100%;
+    }
+
     .logo-pic {
       filter: invert(100%);
 
+      @media #{$medium}{
+        display: flex;
+        width: 100%;
+      }
+
+
       .company-logo {
         width: 70%;
+
+        @media #{$medium}{
+          width: 15%;
+        }
       }
     }
 
     .full-name {
+      font-family: $basefont;
+      font-size: 25px;
+      font-weight: 300;
+      letter-spacing: 0.5px;
+      text-align: center;
       width: 30%;
+
+      @media #{$medium}{
+        width: 100%;
+      }
 
       .company-name {
         color: $lightblue;
-        font-family: $basefont;
-        font-size: 30px;
-        font-weight: 300;
+
+        @media #{$medium}{
+          color: $darkgray;
+          font-weight: 600;
+          width: 100%;
+        }
 
         .bold-name {
           font-weight: 600;
         }
+
+        .extended-name {
+          display: none;
+
+          @media #{$medium}{
+            color: $darkgray;
+            display: inline;
+            font-weight: 300;
+          }
+        }
       }
 
-      .extended-name {
-        display: none;
-      }
     }
   }
   .navigation-bar {
@@ -43,13 +87,43 @@
     justify-content: flex-end;
     width: 60%;
 
+    @media #{$medium}{
+      justify-content: center;
+    }
+
     img {
       padding-right: 10%;
-      width: 15%;
+      width: 10%;
+
+      @media #{$medium}{
+        display: none;
+      }
     }
 
     .nav-list {
+      background-color: $lightblue;
+      font-family: $basefont;
       display: none;
+      flex-flow: column nowrap;
+      position: absolute;
+      text-align: left;
+      top: 77px;
+      width: 100%;
+
+      @media #{$medium}{
+      }
+
+      .nav-items {
+        background-color: $darkgray;
+        color: $lightblue;
+        font-size: 30px;
+        font-weight: 300;
+        margin: 1px 0;
+        padding: 2.5% 7.5%;
+
+        @media #{$medium}{
+        }
+      }
     }
   }
 }

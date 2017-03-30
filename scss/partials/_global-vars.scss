@@ -1,6 +1,6 @@
-$small: "only screen and (min-width:0px) and (max-width:600px)";
-$medium: "only screen and (min-width:965px) and (max-width:1099px)";
-$large: "only screen and (min-width: 1100px)";
+$small: "(min-width:0px) and (max-width:600px)";
+$medium: "(min-width:601px) and (max-width:1099px)";
+$large: "(min-width: 1100px)";
 
 $white : #FFFFFF;
 $lightblue : #99CCCC;

@@ -5,6 +5,10 @@
   flex-flow: column nowrap;
   width: $full-width;
 
+  @media #{$medium}{
+    background-color: $white;
+  }
+
   img {
     filter: invert(20%);
     margin: -2.5% 0;
