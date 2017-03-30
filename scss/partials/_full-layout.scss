@@ -8,9 +8,9 @@ body {
     flex-flow: column wrap;
     justify-content: space-between;
 
-    @import "./header-small";
-    @import "./body-small";
-    @import "./body-small2";
-    @import "./footer-small";
+    @import "./header";
+    @import "./general-body";
+    @import "./price-body";
+    @import "./footer";
   }
 }

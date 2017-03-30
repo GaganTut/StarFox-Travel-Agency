@@ -56,6 +56,7 @@ body {
     body .whole-page .whole-header {
       background-color: #333333;
       display: flex;
+      height: 70px;
       margin-top: 1%;
       width: 100%; }
       body .whole-page .whole-header .company-intro {
@@ -64,17 +65,18 @@ body {
         justify-content: center;
         width: 40%; }
         body .whole-page .whole-header .company-intro .logo-pic {
-          filter: invert(100%);
-          width: 30%; }
+          filter: invert(100%); }
+          body .whole-page .whole-header .company-intro .logo-pic .company-logo {
+            width: 70%; }
         body .whole-page .whole-header .company-intro .full-name {
-          width: 50%; }
+          width: 30%; }
           body .whole-page .whole-header .company-intro .full-name .company-name {
             color: #99CCCC;
             font-family: "Open Sans";
-            font-size: 40px;
+            font-size: 30px;
             font-weight: 300; }
             body .whole-page .whole-header .company-intro .full-name .company-name .bold-name {
-              font-weight: 500; }
+              font-weight: 600; }
           body .whole-page .whole-header .company-intro .full-name .extended-name {
             display: none; }
       body .whole-page .whole-header .navigation-bar {
@@ -94,14 +96,15 @@ body {
       width: 100%; }
       body .whole-page .general-info img {
         filter: invert(20%);
+        margin: -2.5% 0;
         width: 50%; }
       body .whole-page .general-info .company-mission {
         color: #333333;
         font-family: "Open Sans";
-        font-size: 50px;
+        font-size: 30px;
         font-weight: 300;
-        letter-spacing: -1px;
-        line-height: 70px;
+        letter-spacing: 0px;
+        line-height: 40px;
         text-align: center;
         width: 80%; }
         body .whole-page .general-info .company-mission .bold-words {
@@ -117,10 +120,10 @@ body {
         body .whole-page .general-info .find-out-button .button-text {
           color: #FFFFFF;
           font-family: "Open Sans";
-          font-size: 35px;
+          font-size: 20px;
           font-weight: 300;
-          letter-spacing: 3px;
-          line-height: 100px; }
+          letter-spacing: 1px;
+          line-height: 60px; }
     body .whole-page .pricing {
       align-items: center;
       background-color: white;
@@ -132,15 +135,15 @@ body {
       body .whole-page .pricing .moon-pricing, body .whole-page .pricing .earth-pricing {
         align-items: center;
         background-color: #666666;
-        border-radius: 10px;
+        border-radius: 5px;
         display: flex;
         flex-flow: column nowrap;
-        height: 500px;
+        height: 350px;
         margin-top: 10%;
         width: 80%; }
         body .whole-page .pricing .moon-pricing .pricing-title, body .whole-page .pricing .earth-pricing .pricing-title {
           border-bottom: 1px solid #333333;
-          font-size: 40px;
+          font-size: 25px;
           font-weight: 600;
           margin: 5%;
           padding-bottom: 5%;
@@ -148,17 +151,17 @@ body {
           width: 100%; }
         body .whole-page .pricing .moon-pricing .price-amount, body .whole-page .pricing .earth-pricing .price-amount {
           border-bottom: 10px solid #FFFFFF;
-          font-size: 100px;
+          font-size: 70px;
           font-weight: 300;
           margin: 5%;
           padding-bottom: 2.5%; }
         body .whole-page .pricing .moon-pricing .price-info, body .whole-page .pricing .earth-pricing .price-info {
-          font-size: 20px;
+          font-size: 15px;
           font-weight: 300;
-          letter-spacing: 1.5px;
-          line-height: 40px;
+          letter-spacing: 1px;
+          line-height: 20px;
           text-align: center;
-          width: 50%; }
+          width: 60%; }
       body .whole-page .pricing .other-pricing-options {
         display: none; }
       body .whole-page .pricing .more-pricing {
@@ -171,19 +174,20 @@ body {
         padding: 2.5% 0;
         width: 100%; }
         body .whole-page .pricing .more-pricing .deals-text {
-          font-size: 50px;
+          font-size: 25px;
+          font-weight: 600;
           padding-right: 2.5%; }
         body .whole-page .pricing .more-pricing img {
-          width: 10%; }
+          width: 7.5%; }
     body .whole-page .the-footer {
       align-items: center;
       background-color: #333333;
       display: flex;
-      height: 130px;
+      height: 100px;
       justify-content: center;
       width: 100%; }
       body .whole-page .the-footer .foot-text {
         color: #666666;
-        font-size: 20px;
+        font-size: 15px;
         text-align: center;
-        width: 40%; }
+        width: 50%; }

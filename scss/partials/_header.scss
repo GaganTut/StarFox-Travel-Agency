@@ -1,6 +1,7 @@
 .whole-header {
   background-color: $darkgray;
   display: flex;
+  height: 70px;
   margin-top: 1%;
   width: $full-width;
 
@@ -12,20 +13,23 @@
 
     .logo-pic {
       filter: invert(100%);
-      width: 30%;
+
+      .company-logo {
+        width: 70%;
+      }
     }
 
     .full-name {
-      width: 50%;
+      width: 30%;
 
       .company-name {
         color: $lightblue;
         font-family: $basefont;
-        font-size: 40px;
+        font-size: 30px;
         font-weight: 300;
 
         .bold-name {
-          font-weight: 500;
+          font-weight: 600;
         }
       }
 

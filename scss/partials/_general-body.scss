@@ -7,16 +7,17 @@
 
   img {
     filter: invert(20%);
+    margin: -2.5% 0;
     width: 50%;
   }
 
   .company-mission {
     color: $darkgray;
     font-family: $basefont;
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 300;
-    letter-spacing: -1px;
-    line-height: 70px;
+    letter-spacing: 0px;
+    line-height: 40px;
     text-align: center;
     width: 80%;
 
@@ -37,10 +38,10 @@
     .button-text {
       color: $white;
       font-family: $basefont;
-      font-size: 35px;
+      font-size: 20px;
       font-weight: 300;
-      letter-spacing: 3px;
-      line-height: 100px;
+      letter-spacing: 1px;
+      line-height: 60px;
     }
   }
 }
