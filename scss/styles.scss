@@ -1,14 +1,3 @@
 @import "partials/reset";
 @import "partials/global-vars";
-
-/* @media (max-width: 600px) { */
-  body {
-    background-color: $lightblue;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
-    @import "partials/header-small";
-    @import "partials/body-small";
-  }
-/* } */
+@import "partials/layout-small";

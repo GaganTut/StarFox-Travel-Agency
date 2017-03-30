@@ -1,0 +1,16 @@
+body {
+  background-color: $lightblue;
+  height: 1800px;
+  width: 100%;
+
+  .whole-page {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+
+    @import "./header-small";
+    @import "./body-small";
+    @import "./body-small2";
+    @import "./footer-small";
+  }
+}
